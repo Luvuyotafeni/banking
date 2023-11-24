@@ -111,15 +111,31 @@ class BankingGUI:
             return
 
         if choice == 1:
-            self.perform_deposit()
+            self.show_deposit_screen()
         elif choice == 2:
-            self.perform_withdrawal()
+            self.show_withdrawal_screen()
 
         dialog.destroy()
-        self.master.geometry("400x400")
         self.master.update()
         self.master.configure(bg='gray')
 
+    def show_deposit_screen(self):
+        deposit_amount = simpledialog.askfloat("Deposit", "Enter deposit amount:")
+        if deposit_amount is None:
+            messagebox.showinfo("Info", "Deposit canceled.")
+            return  # User canceled the input dialog
+
+        # Perform deposit with the entered amount
+        self.perform_deposit()
+
+    def show_withdrawal_screen(self):
+        withdrawal_amount = simpledialog.askfloat("Withdrawal", "Enter withdrawal amount:")
+        if withdrawal_amount is None:
+            messagebox.showinfo("Info", "Withdrawal canceled.")
+            return  # User canceled the input dialog
+
+        # Perform withdrawal with the entered amount
+        self.perform_withdrawal()
     def perform_deposit(self):
         try:
             deposit_amount = simpledialog.askfloat("Deposit", "Enter deposit amount:")

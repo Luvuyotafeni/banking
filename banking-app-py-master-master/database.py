@@ -98,7 +98,7 @@ engine = create_engine(DATABASE_URL)
 
 # Drop existing tables (optional)
 
-# Base.metadata.drop_all(bind=engine)
+#Base.metadata.drop_all(bind=engine)
 
 # Create tables
 Base.metadata.create_all(bind=engine)
