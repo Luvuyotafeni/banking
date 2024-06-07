@@ -1,8 +1,3 @@
-# @Author : Thabiso Matsaba
-# @Project : banking-app-py-master
-# @Date:  2023/11/14
-# @Time : 10:10
-
 import tkinter as tk
 from tkinter import messagebox, simpledialog, font, ttk
 
