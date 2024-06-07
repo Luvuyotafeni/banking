@@ -1,7 +1,3 @@
-# @Author : Thabiso Matsaba
-# @Project : banking-app-py-master
-# @Date:  2023/11/02
-# @Time : 13:54
 
 # User Class
 class User:
