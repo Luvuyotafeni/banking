@@ -1,8 +1,3 @@
-# @Author : Thabiso Matsaba
-# @Project : banking-app-py-master
-# @Date:  2023/11/14
-# @Time : 09:53
-
 import tkinter as tk
 from tkinter import messagebox
 from tkinter import font as tkfont
