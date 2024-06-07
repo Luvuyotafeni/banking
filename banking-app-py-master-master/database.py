@@ -1,9 +1,3 @@
-# @Author : Thabiso Matsaba
-# @Project : banking-app-py-master
-# @Date:  2023/11/13
-# @Time : 15:08
-
-
 import hashlib
 from datetime import datetime
 
